@@ -11,6 +11,11 @@ namespace ariel{
         this->leader = leader;
         this->team[0] = leader;
     }
+    // Team::Team(const Team& other){
+    //     this->team = new Character*[10];
+    //     this->leader = other.leader;
+        
+    // }
     void Team::add(Character* warrior){
 
     }

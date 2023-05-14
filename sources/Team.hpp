@@ -15,11 +15,12 @@ namespace ariel{
             Character** team;
             Character* leader;
             Team(Character* leader);
+            // Team(const Team& other);
             void add(Character* warrior);
             void attack(Team* other);
             int stillAlive() const;
             void print() const;
-            //~Team();
+            // ~Team();
     };
     class Team2{
         private:
