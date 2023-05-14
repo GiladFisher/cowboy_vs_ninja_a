@@ -10,9 +10,10 @@ using namespace std;
 namespace ariel{
     class Team{// a team of up to 10 characters
         private:
+            
+        public:
             Character** team;
             Character* leader;
-        public:
             Team(Character* leader);
             void add(Character* warrior);
             void attack(Team* other);
