@@ -20,4 +20,29 @@ namespace ariel{
             void print() const;
             ~Team();
     };
+    class Team2{
+        private:
+            Character** team;
+            Character* leader;
+        public:
+            Team2(Character* leader);
+            void add(Character* warrior);
+            void attack(Team2* other);
+            int stillAlive() const;
+            void print() const;
+            ~Team2();
+    };
+    class SmartTeam{
+        private:
+            Character** team;
+            Character* leader;
+        public:
+            SmartTeam(Character* leader);
+            void add(Character* warrior);
+            void attack(SmartTeam* other);
+            int stillAlive() const;
+            void print() const;
+            ~SmartTeam();
+    };
 }
+    

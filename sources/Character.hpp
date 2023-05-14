@@ -13,6 +13,7 @@ namespace ariel{
             string name;
             int health;
         public:
+            Character(string name, Point loc);
             bool isAlive() const;
             double distance(Character* other) const;
             void hit(int dmg);
@@ -37,7 +38,7 @@ namespace ariel{
             YoungNinja(string name, Point loc);
             void slash(Character* other); // 40 damage
             void move(Character* other); // move towards other
-            string print() const;
+            void print() const;
     };
     class OldNinja : public Character{
         private:
@@ -46,7 +47,7 @@ namespace ariel{
             OldNinja(string name, Point loc);
             void slash(Character* other); // 40 damage
             void move(Character* other); // move towards other
-            string print() const;
+            void print() const;
     };
     class TrainedNinja : public Character{
         private:
@@ -55,6 +56,6 @@ namespace ariel{
             TrainedNinja(string name, Point loc);
             void slash(Character* other); // 40 damage
             void move(Character* other); // move towards other
-            string print() const;
+            void print() const;
     };
 }
