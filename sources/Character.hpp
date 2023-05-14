@@ -20,4 +20,38 @@ namespace ariel{
             Point getLocation() const;
             void print() const;
     };
+    class Cowboy : public Character{
+        private:
+            int bullets;
+        public:
+            Cowboy(string name, Point loc);
+            void shoot(Character* other); // 10 damage
+            string print() const;
+            bool hasboolets();
+            void reload(); // 6 bullets
+    };
+    class YoungNinja : public Character{
+        private:
+            int speed;
+        public:
+            YoungNinja(string name, Point loc);
+            void slash(Character* other); // 40 damage
+            string print() const;
+    };
+    class OldNinja : public Character{
+        private:
+            int speed;
+        public:
+            OldNinja(string name, Point loc);
+            void slash(Character* other); // 20 damage
+            string print() const;
+    };
+    class TrainedNinja : public Character{
+        private:
+            int speed;
+        public:
+            TrainedNinja(string name, Point loc);
+            void slash(Character* other); // 30 damage
+            string print() const;
+    };
 }
