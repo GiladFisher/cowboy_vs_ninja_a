@@ -19,7 +19,7 @@ namespace ariel{
             void attack(Team* other);
             int stillAlive() const;
             void print() const;
-            ~Team();
+            //~Team();
     };
     class Team2{
         private:
@@ -31,7 +31,7 @@ namespace ariel{
             void attack(Team2* other);
             int stillAlive() const;
             void print() const;
-            ~Team2();
+            // ~Team2();
     };
     class SmartTeam{
         private:
@@ -43,7 +43,7 @@ namespace ariel{
             void attack(SmartTeam* other);
             int stillAlive() const;
             void print() const;
-            ~SmartTeam();
+            // ~SmartTeam();
     };
 }
     

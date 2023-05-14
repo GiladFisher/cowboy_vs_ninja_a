@@ -23,8 +23,8 @@ namespace ariel{
     void Team::print() const{
 
     }
-    Team::~Team(){
-        delete[] this->team;
-    }
-    
+    // Team::~Team(){
+    //     delete[] this->team;
+    // }
+
 }
