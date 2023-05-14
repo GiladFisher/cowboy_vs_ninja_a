@@ -3,7 +3,7 @@
 #include <sstream>
 #include <stdexcept>
 #include <cassert>
-#include "sources/point.hpp"
+#include "Point.hpp"
 
 using namespace std;
 namespace ariel{
@@ -36,6 +36,7 @@ namespace ariel{
         public:
             YoungNinja(string name, Point loc);
             void slash(Character* other); // 40 damage
+            void move(Character* other); // move towards other
             string print() const;
     };
     class OldNinja : public Character{
@@ -43,7 +44,8 @@ namespace ariel{
             int speed;
         public:
             OldNinja(string name, Point loc);
-            void slash(Character* other); // 20 damage
+            void slash(Character* other); // 40 damage
+            void move(Character* other); // move towards other
             string print() const;
     };
     class TrainedNinja : public Character{
@@ -51,7 +53,8 @@ namespace ariel{
             int speed;
         public:
             TrainedNinja(string name, Point loc);
-            void slash(Character* other); // 30 damage
+            void slash(Character* other); // 40 damage
+            void move(Character* other); // move towards other
             string print() const;
     };
 }

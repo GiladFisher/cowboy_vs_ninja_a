@@ -3,7 +3,7 @@
 #include <sstream>
 #include <stdexcept>
 #include <cassert>
-#include "sources/Character.hpp"
+#include "Character.hpp"
 
 using namespace std;
 
